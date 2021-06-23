@@ -7,8 +7,14 @@
 
   export let metadescription;
   export let title;
-  export let twitterImage = null;
+  export let twitterImage = {
+    url:
+      'https://rodneylab-climate-starter.imgix.net/home-twitter.jpg?ixlib=js-3.2.0&w=800&h=418&s=1b08b7276d34486234a4e2c1ccb49a74',
+    alt:
+      'SvelteKit MDsvex Blog Starter - starter code by Rodney Lab to help you get going on your next blog site',
+  };
 
+  console.log('Twitter image: ', twitterImage);
   const pageTitle = `${siteTitle} ${VERTICAL_LINE_ENTITY} ${title}`;
   const twitterProps = {
     author,

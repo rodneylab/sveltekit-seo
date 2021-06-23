@@ -28,7 +28,7 @@ https://rodneylab-climate-starter.imgix.net/folding-camera.jpg?ixlib=js-v3.1.3&a
 https://rodneylab-climate-starter.imgix.net/folding-camera.jpg?ixlib=js-v3.1.3&auto=format&w=1344&s=fe7856bfd01f2b3756fcb0f6bc725e12 1344w'
 ogImage: ''
 ogSquareImage: ''
-twitterImage: 'folding-camera-twitter.jpg'
+twitterImage: 'https://rodneylab-climate-starter.imgix.net/folding-camera-twitter.jpg?ixlib=js-3.2.0&w=800&h=418&s=d4edca337afb31f84e08afeb2af508d9'
 categories: ''
 tags: ''
 ---

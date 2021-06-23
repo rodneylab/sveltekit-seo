@@ -28,7 +28,7 @@ https://rodneylab-climate-starter.imgix.net/twin-lens-reflex-camera.jpg?ixlib=js
 https://rodneylab-climate-starter.imgix.net/twin-lens-reflex-camera.jpg?ixlib=js-v3.1.3&auto=format&w=1344&s=3de89e43c5ae17ecd771a0a13ff21157 1344w'
 ogImage: ''
 ogSquareImage: ''
-twitterImage: 'twin-lens-reflex-camera-twitter.jpg'
+twitterImage: 'https://rodneylab-climate-starter.imgix.net/twin-lens-reflex-camera-twitter.jpg?ixlib=js-3.2.0&w=800&h=418&s=90e4a56248b0eac548719ff805a887b0'
 categories: ''
 tags: ''
 ---
