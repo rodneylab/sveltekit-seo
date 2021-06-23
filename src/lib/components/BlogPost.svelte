@@ -1,7 +1,6 @@
 <script>
   import BannerImage from '$lib/components/BannerImage.svelte';
   import SEO from '$lib/components/SEO/index.svelte';
-  import website from '$lib/config/website';
 
   export let post;
 
@@ -12,6 +11,7 @@
     featuredImageSrcset,
     postTitle: title,
     seoMetaDescription: metadescription,
+    slug,
     twitterImage = null,
   } = post;
 
@@ -29,5 +29,5 @@
   };
 </script>
 
-<SEO article={true} {title} {metadescription} twitterImage={twitterImageObject} />
+<SEO article={true} {slug} {title} {metadescription} twitterImage={twitterImageObject} />
 <BannerImage {...bannerImageProps} />

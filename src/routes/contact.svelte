@@ -21,7 +21,7 @@
   let metadescription = 'Get in touch with Rodneylab, the developer of Climate SvelteKit Starter.';
 </script>
 
-<SEO {title} {metadescription} />
+<SEO {title} slug="contact" {metadescription} />
 <Card>
   <h1>Contact me</h1>
   <p>I would love to hear from you. Please get in touch!</p>

@@ -3,9 +3,10 @@
   import website from '$lib/config/website';
   import Twitter from './Twitter.svelte';
 
-  const { author, siteLanguage, siteTitle } = website;
+  const { author, siteLanguage, siteTitle, siteUrl } = website;
 
   export let metadescription;
+  export let slug;
   export let title;
   export let twitterImage = {
     url:
@@ -22,6 +23,7 @@
     image: twitterImage,
     metadescription,
     pageTitle,
+    url: `${siteUrl}/${slug}`,
   };
 </script>
 

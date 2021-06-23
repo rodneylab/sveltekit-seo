@@ -36,7 +36,7 @@
   };
 </script>
 
-<SEO {title} {metadescription} {featuredImageAlt} {twitterImage} />
+<SEO {title} slug="" {metadescription} {featuredImageAlt} {twitterImage} />
 <header>
   <h1>Climate &mdash; Sveltekit Starter</h1>
   <h2>SvelteKit MDsveX (Markdown for Svelte) Blog</h2>
