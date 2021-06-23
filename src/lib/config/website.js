@@ -5,6 +5,7 @@ const website = {
   ogLanguage: 'en_GB',
   siteLanguage: 'en-GB',
   siteTitle: 'SvelteKit Blog Mdx',
+  siteUrl: import.meta.env.VITE_SITE_URL,
   contactEmail: import.meta.env.VITE_CONTACT_EMAIL,
   facebookPage: `https://www.facebook.com/${facebookPageName}`,
   facebookPageName,
