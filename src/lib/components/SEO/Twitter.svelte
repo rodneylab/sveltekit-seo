@@ -9,12 +9,12 @@
 </script>
 
 <svelte:head>
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content={pageTitle} />
-  <meta property="twitter:description" content={metadescription} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={pageTitle} />
+  <meta name="twitter:description" content={metadescription} />
   {#if image}
-    <meta property="twitter:image" content={image.url} />
-    <meta property="twitter:image:alt" content={image.alt} />
+    <meta name="twitter:image" content={image.url} />
+    <meta name="twitter:image:alt" content={image.alt} />
   {/if}
   {#if twitterUsername}
     <meta name="twitter:creator" content={`@${twitterUsername}`} />

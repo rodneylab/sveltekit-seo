@@ -11,7 +11,7 @@
     url:
       'https://rodneylab-climate-starter.imgix.net/home-twitter.jpg?ixlib=js-3.2.0&w=800&h=418&s=1b08b7276d34486234a4e2c1ccb49a74',
     alt:
-      'SvelteKit MDsvex Blog Starter - starter code by Rodney Lab to help you get going on your next blog site',
+      'picture of a person long, curly hair, wearing a red had taking a picture with a an analogue camera',
   };
 
   console.log('Twitter image: ', twitterImage);
