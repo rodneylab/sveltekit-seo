@@ -5,8 +5,10 @@
 
   const { author, siteLanguage, siteTitle, siteUrl } = website;
 
+  export let article = false;
   export let metadescription;
   export let slug;
+  export let timeToRead = 0;
   export let title;
   export let twitterImage = {
     url:
@@ -17,11 +19,13 @@
 
   const pageTitle = `${siteTitle} ${VERTICAL_LINE_ENTITY} ${title}`;
   const twitterProps = {
+    article,
     author,
     twitterUsername: import.meta.env.VITE_TWITTER_USERNAME,
     image: twitterImage,
     metadescription,
     pageTitle,
+    timeToRead,
     url: `${siteUrl}/${slug}`,
   };
 </script>

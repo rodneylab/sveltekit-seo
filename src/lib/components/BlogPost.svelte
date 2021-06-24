@@ -1,9 +1,11 @@
 <script>
+  import readingTime from 'reading-time';
   import BannerImage from '$lib/components/BannerImage.svelte';
   import SEO from '$lib/components/SEO/index.svelte';
 
   export let post;
 
+  const timeToRead = Math.ceil(readingTime(post.body).minutes);
   const {
     featuredImage,
     featuredImageAlt,
@@ -29,5 +31,12 @@
   };
 </script>
 
-<SEO article={true} {slug} {title} {metadescription} twitterImage={twitterImageObject} />
+<SEO
+  article={true}
+  {slug}
+  {title}
+  {metadescription}
+  {timeToRead}
+  twitterImage={twitterImageObject}
+/>
 <BannerImage {...bannerImageProps} />
