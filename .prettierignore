@@ -1,6 +1,6 @@
 .svelte-kit/**
 static/**
 build/**
-functions/render/**
+functions/**
 node_modules/**
 pnpm-lock.yaml

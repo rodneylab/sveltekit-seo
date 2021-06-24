@@ -15,7 +15,6 @@
       'picture of a person long, curly hair, wearing a red had taking a picture with a an analogue camera',
   };
 
-  console.log('Twitter image: ', twitterImage);
   const pageTitle = `${siteTitle} ${VERTICAL_LINE_ENTITY} ${title}`;
   const twitterProps = {
     author,
