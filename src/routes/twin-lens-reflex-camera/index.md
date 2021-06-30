@@ -26,8 +26,8 @@ https://rodneylab-climate-starter.imgix.net/twin-lens-reflex-camera.jpg?ixlib=js
 https://rodneylab-climate-starter.imgix.net/twin-lens-reflex-camera.jpg?ixlib=js-v3.1.3&auto=format&w=1075&s=156dc49cd33e1c1ecea40757e23addc6 1075w,
 https://rodneylab-climate-starter.imgix.net/twin-lens-reflex-camera.jpg?ixlib=js-v3.1.3&auto=format&w=1247&s=495b301355457417c222571174cd8d8f 1247w,
 https://rodneylab-climate-starter.imgix.net/twin-lens-reflex-camera.jpg?ixlib=js-v3.1.3&auto=format&w=1344&s=3de89e43c5ae17ecd771a0a13ff21157 1344w'
-ogImage: ''
-ogSquareImage: ''
+ogImage: 'https://rodneylab-climate-starter.imgix.net/twin-lens-reflex-camera-open-graph.jpg?ixlib=js-3.2.1&w=1200&h=627&s=dc201f68701fd01c6855605f509198f4'
+ogSquareImage: 'twin-lens-reflex-camera-open-graph-square.jpg?ixlib=js-3.2.1&w=400&h=400&s=9a2d29d256020a5d4d9ef18aa7b1b455'
 twitterImage: 'https://rodneylab-climate-starter.imgix.net/twin-lens-reflex-camera-twitter.jpg?ixlib=js-3.2.0&w=800&h=418&s=90e4a56248b0eac548719ff805a887b0'
 categories: ''
 tags: ''

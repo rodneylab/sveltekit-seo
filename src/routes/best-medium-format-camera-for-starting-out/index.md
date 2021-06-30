@@ -26,8 +26,8 @@ https://rodneylab-climate-starter.imgix.net/best-medium-format-camera-for-starti
 https://rodneylab-climate-starter.imgix.net/best-medium-format-camera-for-starting-out.jpg?ixlib=js-v3.1.3&auto=format&w=1075&s=9667a02e23989c2ce6d9783e020b6756 1075w,
 https://rodneylab-climate-starter.imgix.net/best-medium-format-camera-for-starting-out.jpg?ixlib=js-v3.1.3&auto=format&w=1247&s=daa8c379fe64bf0f32c624441eddae75 1247w,
 https://rodneylab-climate-starter.imgix.net/best-medium-format-camera-for-starting-out.jpg?ixlib=js-v3.1.3&auto=format&w=1344&s=4dd9a23d20918fb2f098658653c5689d 1344w'
-ogImage: ''
-ogSquareImage: ''
+ogImage: 'https://rodneylab-climate-starter.imgix.net/best-medium-format-camera-for-starting-out-open-graph.jpg?ixlib=js-3.2.1&w=1200&h=627&s=3bd576df666fae35a312ed02425aac25'
+ogSquareImage: 'https://rodneylab-climate-starter.imgix.net/best-medium-format-camera-for-starting-out-open-graph-square.jpg?ixlib=js-3.2.1&w=400&h=400&s=ab8c1d3f5139d9f48578baba97549f14'
 twitterImage: 'https://rodneylab-climate-starter.imgix.net/best-medium-format-camera-for-starting-out-twitter.jpg?ixlib=js-3.2.0&w=800&h=418&s=5a4968759b838f0209894062d815e045'
 categories: ''
 tags: ''

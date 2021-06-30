@@ -29,13 +29,30 @@
     'SvelteKit MDsvex Blog Starter - starter code by Rodney Lab to help you get going on your next blog site';
   const featuredImageAlt =
     'picture of a person with long, curly hair, wearing a red had taking a picture with an analogue camera';
+  const ogImage = {
+    url: 'https://rodneylab-climate-starter.imgix.net/home-open-graph.jpg?ixlib=js-3.2.1&w=1200&h=627&s=81c4407df7d9782806b78d698dbcbc75',
+    alt: featuredImageAlt,
+  };
+  const ogSquareImage = {
+    url: 'https://rodneylab-climate-starter.imgix.net/home-open-graph-square.jpg?ixlib=js-3.2.1&w=400&h=400&s=f98299427341f6f66d1c2460bad224e2',
+    alt: featuredImageAlt,
+  };
+
   const twitterImage = {
     url: 'https://rodneylab-climate-starter.imgix.net/home-twitter.jpg?ixlib=js-3.2.0&w=800&h=418&s=1b08b7276d34486234a4e2c1ccb49a74',
     alt: featuredImageAlt,
   };
 </script>
 
-<SEO {title} slug="" {metadescription} {featuredImageAlt} {twitterImage} />
+<SEO
+  {title}
+  slug=""
+  {metadescription}
+  {featuredImageAlt}
+  {ogImage}
+  {ogSquareImage}
+  {twitterImage}
+/>
 <header>
   <h1>Climate &mdash; Sveltekit Starter</h1>
   <h2>SvelteKit MDsveX (Markdown for Svelte) Blog</h2>

@@ -3,20 +3,25 @@
   export let author;
   export let twitterUsername;
   export let image;
-  export let metadescription;
-  export let pageTitle;
+  // export let metadescription;
+  // export let pageTitle;
   export let timeToRead = 0;
-  export let url;
+  // export let url;
+
+  /*
+   * When there is an equivalent og tag present, Twitter takes that so these have benn commented out
+   * below.  You can uncomment them to override the OpenGraph values.
+   */
 </script>
 
 <svelte:head>
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={pageTitle} />
-  <meta name="twitter:description" content={metadescription} />
-  <meta name="twitter:url" content={url} />
+  <!-- <meta name="twitter:title" content={pageTitle} /> -->
+  <!-- <meta name="twitter:description" content={metadescription} /> -->
+  <!-- <meta name="twitter:url" content={url} /> -->
   {#if image}
     <meta name="twitter:image" content={image.url} />
-    <meta name="twitter:image:alt" content={image.alt} />
+    <!-- <meta name="twitter:image:alt" content={image.alt} /> -->
   {/if}
   {#if twitterUsername}
     <meta name="twitter:creator" content={`@${twitterUsername}`} />

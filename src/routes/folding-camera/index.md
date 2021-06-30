@@ -26,8 +26,8 @@ https://rodneylab-climate-starter.imgix.net/folding-camera.jpg?ixlib=js-v3.1.3&a
 https://rodneylab-climate-starter.imgix.net/folding-camera.jpg?ixlib=js-v3.1.3&auto=format&w=1075&s=4721fa0435d35bf335fadc26df5dba1b 1075w,
 https://rodneylab-climate-starter.imgix.net/folding-camera.jpg?ixlib=js-v3.1.3&auto=format&w=1247&s=433780d13df511ff98f28ffb7aa4aeb9 1247w,
 https://rodneylab-climate-starter.imgix.net/folding-camera.jpg?ixlib=js-v3.1.3&auto=format&w=1344&s=fe7856bfd01f2b3756fcb0f6bc725e12 1344w'
-ogImage: ''
-ogSquareImage: ''
+ogImage: 'https://rodneylab-climate-starter.imgix.net/folding-camera-open-graph.jpg?ixlib=js-3.2.1&w=1200&h=627&s=97b2991c11c26af530f41faa9921fd7d'
+ogSquareImage: 'https://rodneylab-climate-starter.imgix.net/folding-camera-open-graph-square.jpg?ixlib=js-3.2.1&w=400&h=400&s=48dfd9ae00c175f59dc9ba815b39234e'
 twitterImage: 'https://rodneylab-climate-starter.imgix.net/folding-camera-twitter.jpg?ixlib=js-3.2.0&w=800&h=418&s=d4edca337afb31f84e08afeb2af508d9'
 categories: ''
 tags: ''
