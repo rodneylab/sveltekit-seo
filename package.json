@@ -1,10 +1,10 @@
 {
   "name": "sveltekit-seo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "scripts": {
-    "dev": "svelte-kit dev --port 3030",
+    "dev": "svelte-kit dev --port 3000",
     "build": "svelte-kit build",
-    "preview": "svelte-kit preview --port 3030",
+    "preview": "svelte-kit preview --port 3000",
     "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "prettier:check": "prettier --check --plugin-search-dir=. .",
     "format": "prettier --write --plugin-search-dir=. .",
