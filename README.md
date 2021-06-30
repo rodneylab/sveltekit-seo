@@ -13,7 +13,7 @@
 
 # sveltekit-seo
 
-See the [SvelteKit SEO blog post on the Rodney Lab site](https://rodneylab.com/sveltekit-seo/) for more on how to set this site up. There is a live demo at [sveltekit-seo.rodneylab.com](https://gatsby-serverless-rust.rodneylab.com/).
+See the [SvelteKit SEO blog post on the Rodney Lab site](https://rodneylab.com/sveltekit-seo/) for more on how to set this site up. There is a live demo at [sveltekit-seo.rodneylab.com](https://sveltekit-seo.rodneylab.com/).
 
 Please drop questions into a comment at the bottom of that page. Here's the quick start:
 
