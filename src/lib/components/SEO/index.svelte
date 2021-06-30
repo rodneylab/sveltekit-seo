@@ -11,10 +11,8 @@
   export let timeToRead = 0;
   export let title;
   export let twitterImage = {
-    url:
-      'https://rodneylab-climate-starter.imgix.net/home-twitter.jpg?ixlib=js-3.2.0&w=800&h=418&s=1b08b7276d34486234a4e2c1ccb49a74',
-    alt:
-      'picture of a person with long, curly hair, wearing a red had taking a picture with an analogue camera',
+    url: 'https://rodneylab-climate-starter.imgix.net/home-twitter.jpg?ixlib=js-3.2.0&w=800&h=418&s=1b08b7276d34486234a4e2c1ccb49a74',
+    alt: 'picture of a person with long, curly hair, wearing a red had taking a picture with an analogue camera',
   };
 
   const pageTitle = `${siteTitle} ${VERTICAL_LINE_ENTITY} ${title}`;

@@ -30,8 +30,7 @@
   const featuredImageAlt =
     'picture of a person with long, curly hair, wearing a red had taking a picture with an analogue camera';
   const twitterImage = {
-    url:
-      'https://rodneylab-climate-starter.imgix.net/home-twitter.jpg?ixlib=js-3.2.0&w=800&h=418&s=1b08b7276d34486234a4e2c1ccb49a74',
+    url: 'https://rodneylab-climate-starter.imgix.net/home-twitter.jpg?ixlib=js-3.2.0&w=800&h=418&s=1b08b7276d34486234a4e2c1ccb49a74',
     alt: featuredImageAlt,
   };
 </script>
