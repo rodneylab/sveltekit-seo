@@ -1,3 +1,14 @@
+## 0.3.0 (2021-07-07)
+
+### Fix
+
+- **schemaorg**: ✅ fixed SearchAction
+- **dependencies**: 💫 update packages
+
+### Feat
+
+- ✨ added Schema.org meta
+
 ## 0.2.0 (2021-06-30)
 
 ### Feat
