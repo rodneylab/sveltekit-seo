@@ -21,6 +21,23 @@
     twitterImage = null,
   } = post;
 
+  const breadcrumbs = [
+    {
+      name: 'Home',
+      slug: '',
+    },
+    {
+      name: title,
+      slug,
+    },
+  ];
+  const featuredImageObject = {
+    url: featuredImage,
+    alt: featuredImageAlt,
+    width: 672,
+    height: 448,
+    caption: title,
+  };
   const ogImageObject = ogImage
     ? {
         url: ogImage,
@@ -49,12 +66,14 @@
 
 <SEO
   article={true}
+  {breadcrumbs}
   {slug}
   {title}
   {datePublished}
   {lastUpdated}
   {metadescription}
   {timeToRead}
+  featuredImage={featuredImageObject}
   ogImage={ogImageObject}
   ogSquareImage={ogSquareImageObject}
   twitterImage={twitterImageObject}

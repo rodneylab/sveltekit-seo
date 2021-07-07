@@ -2,9 +2,11 @@ const facebookPageName = import.meta.env.VITE_FACEBOOK_PAGE;
 
 const website = {
   author: 'Rodney Johnson',
+  entity: 'Rodney Lab',
   ogLanguage: 'en_GB',
   siteLanguage: 'en-GB',
-  siteTitle: 'SvelteKit Blog Mdx',
+  siteTitle: 'SvelteKit SEO Demo Site',
+  siteShortTitle: 'SvelteKit SEO', // used as SchemaOrg siteTitleAlt
   siteUrl: import.meta.env.VITE_SITE_URL,
   contactEmail: import.meta.env.VITE_CONTACT_EMAIL,
   facebookAuthorPage: `https://www.facebook.com/${import.meta.env.VITE_FACEBOOK_AUTHOR_PAGE}`,

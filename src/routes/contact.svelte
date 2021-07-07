@@ -19,9 +19,27 @@
 
   let title = 'Contact';
   let metadescription = 'Get in touch with Rodneylab, the developer of Climate SvelteKit Starter.';
+  const breadcrumbs = [
+    {
+      name: 'Home',
+      slug: '',
+    },
+    {
+      name: 'Contact Us',
+      slug: 'contact',
+    },
+  ];
+  const seoProps = {
+    breadcrumbs,
+    title,
+    metadescription,
+    slug: 'contact',
+    datePublished: '2021-07-07T14:19:33.000+0100',
+    lastUpdated: '2021-07-07T14:19:33.000+0100',
+  };
 </script>
 
-<SEO {title} slug="contact" {metadescription} />
+<SEO {...seoProps} />
 <Card>
   <h1>Contact me</h1>
   <p>I would love to hear from you. Please get in touch!</p>
@@ -33,7 +51,7 @@
       </li>
       <li>
         <FacebookIcon /><ExternalLink
-          aria-label="D M Rodney Lab on Facebook Messenger"
+          ariaLabel="D M Rodney Lab on Facebook Messenger"
           href={`https://m.me.${facebookPageName}`}
         >
           <span class="contact-address"> {facebookPageName}</span>
@@ -41,7 +59,7 @@
       </li>
       <li>
         <TwitterIcon /><ExternalLink
-          aria-label="D M Rodney Lab on Twitter"
+          ariaLabel="D M Rodney Lab on Twitter"
           href={`https://twitter.com/messages/compose?recipient-id=${twitterUserId}`}
         >
           <span class="contact-address">@{twitterUsername}</span>
@@ -49,7 +67,7 @@
       </li>
       <li>
         <TelegramIcon /><ExternalLink
-          aria-label="Message Rodney Lab on Telegram"
+          ariaLabel="Message Rodney Lab on Telegram"
           href={`https://t.me/${telegramUsername}`}
         >
           <span class="contact-address">{telegramUsername}</span>

@@ -2,21 +2,21 @@
   export let article = false;
   export let datePublished;
   export let lastUpdated;
-  export let facebookAuthorPage;
-  export let facebookPage;
+  export let facebookAuthorPage = '';
+  export let facebookPage = '';
   export let image;
   export let squareImage;
   export let metadescription;
   export let ogLanguage;
   export let pageTitle;
   export let siteTitle;
-  export let siteUrl;
+  export let url;
 </script>
 
 <svelte:head>
   <meta property="og:site_name" content={siteTitle} />
   <meta property="og:locale" content={ogLanguage} />
-  <meta property="og:url" content={siteUrl} />
+  <meta property="og:url" content={url} />
   <meta property="og:type" content={article ? 'article' : 'website'} />
   <meta property="og:title" content={pageTitle} />
   <meta property="og:description" content={metadescription} />
