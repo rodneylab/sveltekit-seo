@@ -65,8 +65,8 @@
     potentialAction: [
       {
         '@type': 'SearchAction',
-        target: `${siteUrl}/?s={query}`,
-        query: 'required',
+        target: `${siteUrl}/?s={search_term_string}`,
+				'query-input': 'required name=search_term_string',
       },
     ],
     inLanguage: siteLanguage,
