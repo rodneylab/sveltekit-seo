@@ -21,7 +21,7 @@ SvelteKit demo code for adding SEO support. The functionality is added principal
 
 See the [SvelteKit SEO blog post on the Rodney Lab site](https://rodneylab.com/sveltekit-seo/) for more on how to set this site up. There is a live demo at [sveltekit-seo.rodneylab.com](https://sveltekit-seo.rodneylab.com/).
 
-Please drop questions into a comment at the bottom of that page. Here's the quick start:
+Please drop questions into a comment at the bottom of one of the post pages. Here's the quick start:
 
 ## Creating your Own MDsveX Blog Site with SEO Components
 
