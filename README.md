@@ -13,6 +13,12 @@
 
 # sveltekit-seo
 
+SvelteKit demo code for adding SEO support. The functionality is added principally by three components. Follow links to read more about using them:
+
+- <a aria-label="Read Rodney Lab blog post on implementing Twitter SEO meta in Svelte Kit" href="https://rodneylab.com/sveltekit-seo/">Twitter</a>: `src/lib/components/SEO/Twitter.svelte`,
+- <a aria-label="Read Rodney Lab blog post on implementing Twitter SEO meta in Svelte Kit" href="https://rodneylab.com/open-graph-seo-sveltekit/">OpenGraph</a>: `src/lib/components/SEO/OpenGraph.svelte`,
+- <a aria-label="Read Rodney Lab blog post on implementing Schema dot org SEO markup in Svelte Kit" href="https://rodneylab.com/adding-schema-org-markup-to-sveltekit-site/">SchemaOrg</a>: `src/lib/components/SEO/SchemaOrg.svelte`.
+
 See the [SvelteKit SEO blog post on the Rodney Lab site](https://rodneylab.com/sveltekit-seo/) for more on how to set this site up. There is a live demo at [sveltekit-seo.rodneylab.com](https://sveltekit-seo.rodneylab.com/).
 
 Please drop questions into a comment at the bottom of that page. Here's the quick start:
