@@ -13,6 +13,8 @@
 
 # sveltekit-seo
 
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/rodneylab/sveltekit-seo)
+
 SvelteKit demo code for adding SEO support. The functionality is added principally by three components. Follow links to read more about using them:
 
 - <a aria-label="Read Rodney Lab blog post on implementing Twitter SEO meta in Svelte Kit" href="https://rodneylab.com/sveltekit-seo/">Twitter</a>: `src/lib/components/SEO/Twitter.svelte`,
