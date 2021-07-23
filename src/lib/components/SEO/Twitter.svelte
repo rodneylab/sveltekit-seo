@@ -7,7 +7,7 @@
 
   /*
    * When there is an equivalent og tag present, Twitter takes that so check OpenGraph before
-   * adding additional tags, unless you wan to override OpenGraph.
+   * adding additional tags, unless you want to override OpenGraph.
    */
 </script>
 
