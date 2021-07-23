@@ -1,3 +1,14 @@
+## Unreleased
+
+## 0.3.1 (2021-07-23)
+
+### Fix
+
+- **dependencies**: 💫 update package
+- 🐞 removed extra head wrap on SEO components
+- **dependencies**: 💫 update package
+- **dependencies**: 💫 updated packages
+
 ## 0.3.0 (2021-07-07)
 
 ### Fix
