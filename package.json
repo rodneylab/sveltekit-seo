@@ -2,7 +2,7 @@
   "name": "sveltekit-seo",
   "version": "0.3.1",
   "scripts": {
-    "dev": "svelte-kit dev --port 3000",
+    "dev": "svelte-kit dev --port 3030",
     "build": "svelte-kit build",
     "preview": "svelte-kit preview --port 3000",
     "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
@@ -15,7 +15,7 @@
     "@fontsource/lora": "^4.5.0",
     "@fontsource/source-sans-pro": "^4.5.0",
     "@imgix/js-core": "^3.2.1",
-    "@sveltejs/adapter-netlify": "^1.0.0-next.25",
+    "@sveltejs/adapter-static": "^1.0.0-next.13",
     "@sveltejs/kit": "^1.0.0-next.137",
     "dayjs": "^1.10.6",
     "eslint": "^7.31.0",

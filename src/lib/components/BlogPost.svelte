@@ -1,9 +1,17 @@
 <script>
+  import ImgixClient from '@imgix/js-core';
   import readingTime from 'reading-time';
   import BannerImage from '$lib/components/BannerImage.svelte';
   import SEO from '$lib/components/SEO/index.svelte';
+  import website from '$lib/config/website';
 
   export let post;
+  const { imgixDomain, imgixSecureToken } = website;
+
+  const client = new ImgixClient({
+    domain: imgixDomain,
+    secureURLToken: imgixSecureToken,
+  });
 
   const timeToRead = Math.ceil(readingTime(post.body).minutes);
   const {
@@ -32,7 +40,7 @@
     },
   ];
   const featuredImageObject = {
-    url: featuredImage,
+    url: client.buildURL(featuredImage, { w: 672, h: 448 }),
     alt: featuredImageAlt,
     width: 672,
     height: 448,
@@ -40,27 +48,25 @@
   };
   const ogImageObject = ogImage
     ? {
-        url: ogImage,
+        url: client.buildURL(ogImage, { w: 1200, h: 627 }),
         alt: featuredImageAlt,
       }
     : null;
   const ogSquareImageObject = ogSquareImage
     ? {
-        url: ogSquareImage,
+        url: client.buildURL(ogSquareImage, { w: 400, h: 400 }),
         alt: featuredImageAlt,
       }
     : null;
   const twitterImageObject = twitterImage
     ? {
-        url: twitterImage,
+        url: client.buildURL(twitterImage, { w: 800, h: 418 }),
         alt: featuredImageAlt,
       }
     : null;
   const bannerImageProps = {
-    featuredImage,
-    featuredImageAlt,
-    featuredImageSrc,
-    featuredImageSrcset,
+    image: featuredImage,
+    alt: featuredImageAlt,
   };
 </script>
 
