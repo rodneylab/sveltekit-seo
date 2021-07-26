@@ -1,4 +1,9 @@
-## Unreleased
+## 0.3.2 (2021-07-26)
+
+### Fix
+
+- 🔧 updated to use static adapter
+- **dependencies**: 💫 update packages
 
 ## 0.3.1 (2021-07-23)
 
