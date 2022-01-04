@@ -1,33 +1,21 @@
 <script>
-  import ImgixClient from '@imgix/js-core';
   import readingTime from 'reading-time';
   import BannerImage from '$lib/components/BannerImage.svelte';
   import SEO from '$lib/components/SEO/index.svelte';
-  import website from '$lib/config/website';
 
+  export let imageData;
   export let post;
-  const { imgixDomain, imgixSecureToken } = website;
 
-  const client = new ImgixClient({
-    domain: imgixDomain,
-    secureURLToken: imgixSecureToken,
-  });
-
-  const timeToRead = Math.ceil(readingTime(post.body).minutes);
   const {
     datePublished,
-    featuredImage,
     featuredImageAlt,
-    // featuredImageSrc,
-    // featuredImageSrcset,
     lastUpdated,
-    ogImage,
-    ogSquareImage,
     postTitle: title,
     seoMetaDescription: metadescription,
     slug,
-    twitterImage = null,
   } = post;
+  const { ogImage, ogSquareImage, src: featuredImage, twitterImage } = imageData;
+  const timeToRead = Math.ceil(readingTime(post.body).minutes);
 
   const breadcrumbs = [
     {
@@ -40,7 +28,7 @@
     },
   ];
   const featuredImageObject = {
-    url: client.buildURL(featuredImage, { w: 672, h: 448 }),
+    url: featuredImage,
     alt: featuredImageAlt,
     width: 672,
     height: 448,
@@ -48,30 +36,26 @@
   };
   const ogImageObject = ogImage
     ? {
-        url: client.buildURL(ogImage, { w: 1200, h: 627 }),
+        url: ogImage,
         alt: featuredImageAlt,
       }
     : null;
   const ogSquareImageObject = ogSquareImage
     ? {
-        url: client.buildURL(ogSquareImage, { w: 400, h: 400 }),
+        url: ogSquareImage,
         alt: featuredImageAlt,
       }
     : null;
   const twitterImageObject = twitterImage
     ? {
-        url: client.buildURL(twitterImage, { w: 800, h: 418 }),
+        url: twitterImage,
         alt: featuredImageAlt,
       }
     : null;
-  const bannerImageProps = {
-    image: featuredImage,
-    alt: featuredImageAlt,
-  };
 </script>
 
 <SEO
-  article={true}
+  article
   {breadcrumbs}
   {slug}
   {title}
@@ -84,4 +68,6 @@
   ogSquareImage={ogSquareImageObject}
   twitterImage={twitterImageObject}
 />
-<BannerImage {...bannerImageProps} />
+
+<BannerImage {imageData} />
+<h1>{title}</h1>
