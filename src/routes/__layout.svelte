@@ -2,7 +2,7 @@
   /**
    * @type {import('@sveltejs/kit').Load}
    */
-  export async function load({ fetch, params, url  }) {
+  export async function load({ fetch, params, url }) {
     const { pathname } = url;
     const { slug } = params;
 
