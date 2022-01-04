@@ -2,18 +2,22 @@
   /**
    * @type {import('@sveltejs/kit').Load}
    */
-  export async function load({ fetch }) {
-    const url = `./index.json`;
-    const response = await fetch(url);
+  export async function load({ fetch, url }) {
+    try {
+      const response = await fetch('./index.json');
 
-    if (response.ok) {
-      const { posts } = await response.json();
-      return {
-        props: { posts },
-      };
+      if (response.ok) {
+        const { posts } = await response.json();
+        return {
+          props: { posts },
+        };
+      }
+
+      return {};
+    } catch (error) {
+      const { pathname } = url;
+      console.error(`Error in load function for path: ${pathname}`);
     }
-
-    return {};
   }
 </script>
 

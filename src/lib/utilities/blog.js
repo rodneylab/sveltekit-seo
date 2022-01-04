@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { compile } from 'mdsvex';
 
-export const BLOG_PATH = 'src/routes';
+export const BLOG_PATH = 'src/content/blog';
 
 export const getPostsContent = (location) => {
   const directories = fs
@@ -19,12 +19,19 @@ export const getPostsContent = (location) => {
   return articles;
 };
 
+/**
+ * Returns an array of post metadata, with optional post body too.  Array is sort in reverse
+ * chrononological order
+ * @param {string} postsContent - The title of the book.
+ * @param {bool} body - if true the HTML post body is returned as well as meta
+ */
 export const getPosts = async (postsContent, body = false) => {
   let result = postsContent.map(async (element) => {
     const { content, slug } = element;
     const transformedContent = await compile(content);
-    const { datePublished, postTitle, seoMetaDescription } = transformedContent.data.fm;
-    let resultElement = { datePublished, postTitle, seoMetaDescription, slug };
+    const { datePublished, lastUpdated, postTitle, seoMetaDescription } =
+      transformedContent.data.fm;
+    let resultElement = { datePublished, lastUpdated, postTitle, seoMetaDescription, slug };
     if (body) {
       resultElement = { ...resultElement, body: transformedContent.code };
     }
@@ -40,7 +47,6 @@ export const getPost = async (content, body = true) => {
     datePublished,
     featuredImage,
     featuredImageAlt,
-    lastUpdated,
     ogImage,
     ogSquareImage,
     postTitle,
@@ -51,7 +57,6 @@ export const getPost = async (content, body = true) => {
     datePublished,
     featuredImage,
     featuredImageAlt,
-    lastUpdated,
     ogImage,
     ogSquareImage,
     postTitle,

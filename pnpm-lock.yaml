@@ -31,6 +31,7 @@ specifiers:
   svelte-check: ^2.2.11
   svelte-feather-icons: ^3.5.0
   svelte-preprocess: ^4.10.1
+  vanilla-lazyload: ^17.5.0
 
 devDependencies:
   '@commitlint/config-conventional': 16.0.0
@@ -63,6 +64,7 @@ devDependencies:
   svelte-check: 2.2.11_66db6330e465f871f93322a7a5c0c1f1
   svelte-feather-icons: 3.5.0
   svelte-preprocess: 4.10.1_66db6330e465f871f93322a7a5c0c1f1
+  vanilla-lazyload: 17.5.0
 
 packages:
 
@@ -2616,6 +2618,10 @@ packages:
     dependencies:
       spdx-correct: 3.1.1
       spdx-expression-parse: 3.0.1
+    dev: true
+
+  /vanilla-lazyload/17.5.0:
+    resolution: {integrity: sha512-1d2kjFT2BTrA2ynBBbJ58kIZqtB6TxocAvUFwmzjJ34RqLDlVPy4VmBDuAi6xgv+3LSmP6coKstU2eeRdI+ixw==}
     dev: true
 
   /vfile-message/2.0.4:

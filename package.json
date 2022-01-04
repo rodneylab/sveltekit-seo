@@ -43,7 +43,8 @@
     "svelte": "^3.44.3",
     "svelte-check": "^2.2.11",
     "svelte-feather-icons": "^3.5.0",
-    "svelte-preprocess": "^4.10.1"
+    "svelte-preprocess": "^4.10.1",
+    "vanilla-lazyload": "^17.5.0"
   },
   "type": "module",
   "lint-staged": {
