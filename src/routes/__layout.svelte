@@ -2,14 +2,13 @@
   /**
    * @type {import('@sveltejs/kit').Load}
    */
-  export async function load({ page, fetch, context }) {
-    const { path } = page;
-    const { slug } = page.params;
+  export async function load({ fetch, params, url  }) {
+    const { pathname } = url;
+    const { slug } = params;
 
     // make sure this is not a blog post
-    if (path === '/') {
-      const url = `./index.json`;
-      const response = await fetch(url);
+    if (pathname === '/') {
+      const response = await fetch('./index.json');
 
       if (response.ok) {
         const { posts } = await response.json();
@@ -19,12 +18,11 @@
       }
 
       return {};
-    } else if (path === '/contact') {
+    } else if (pathname === '/contact') {
       return {};
     }
 
-    const url = `${page.path}.json`;
-    const res = await fetch(url);
+    const res = await fetch(`${pathname}.json`);
 
     if (res.ok) {
       const { post } = await res.json();
