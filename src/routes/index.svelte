@@ -1,26 +1,3 @@
-<script context="module">
-  /**
-   * @type {import('@sveltejs/kit').Load}
-   */
-  export async function load({ fetch, url }) {
-    try {
-      const response = await fetch('./index.json');
-
-      if (response.ok) {
-        const { posts } = await response.json();
-        return {
-          props: { posts },
-        };
-      }
-
-      return {};
-    } catch (error) {
-      const { pathname } = url;
-      console.error(`Error in load function for path: ${pathname}`);
-    }
-  }
-</script>
-
 <script>
   import BlogRoll from '$lib/components/BlogRoll.svelte';
   import Card from '$lib/components/Card.svelte';
