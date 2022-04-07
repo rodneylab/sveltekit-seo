@@ -95,7 +95,6 @@
     telegramUsername,
     tiktokUsername,
     twitterUsername,
-    featuredImage,
   };
   const twitterProps = {
     article,
