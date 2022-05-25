@@ -1,6 +1,8 @@
 {
   "name": "sveltekit-seo",
   "version": "0.3.2",
+  "license": "BSD-3-Clause",
+  "description": "SvelteKit SEO: how to use SvelteKit to add search engine optimisation metadata so that social images appear when visitors share posts.",
   "scripts": {
     "dev": "svelte-kit dev --port 3000",
     "build": "svelte-kit build",
@@ -52,5 +54,12 @@
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.{js,css,md}": "prettier --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodneylab/sveltekit-seo"
+  },
+  "bugs": {
+    "url": "https://github.com/rodneylab/sveltekit-seo/issues"
   }
 }
