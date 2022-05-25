@@ -13,7 +13,7 @@
 
 # sveltekit-seo
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/rodneylab/sveltekit-seo)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/sveltekit-seo)
 
 SvelteKit demo code for adding SEO support. The functionality is added principally by three components. Follow links to read more about using them:
 
@@ -43,3 +43,5 @@ npm run build
 ```
 
 > You can preview the built app with `pnpm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+
+Feel free to jump into the [Rodney Lab matrix chat room](https://matrix.to/#/%23rodney:matrix.org).
