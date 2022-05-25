@@ -23,6 +23,7 @@
     "@sveltejs/adapter-static": "^1.0.0-next.32",
     "@sveltejs/kit": "^1.0.0-next.344",
     "@types/object-hash": "^2.2.1",
+    "commitlint": "^17.0.1",
     "dayjs": "^1.11.2",
     "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.5.0",
