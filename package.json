@@ -4,9 +4,9 @@
   "license": "BSD-3-Clause",
   "description": "SvelteKit SEO: how to use SvelteKit to add search engine optimisation metadata so that social images appear when visitors share posts.",
   "scripts": {
-    "dev": "svelte-kit dev --port 3000",
-    "build": "svelte-kit build",
-    "preview": "svelte-kit preview --port 3000",
+    "dev": "vite dev --port 3000",
+    "build": "vite build",
+    "preview": "vite preview --port 3000",
     "check": "svelte-check --fail-on-hints",
     "check:watch": "svelte-check --watch",
     "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
@@ -31,35 +31,34 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "husky": "^8.0.1",
-    "lint-staged": "^12.4.2",
     "mdsvex": "^0.10.5",
     "object-hash": "^3.0.0",
     "postcss": "^8.4.14",
     "postcss-html": "^1.4.1",
-    "prettier": "~2.5.1",
+    "prettier": "~2.7.1",
     "prettier-plugin-svelte": "^2.7.0",
     "reading-time": "~1.4.0",
     "sass": "^1.52.1",
     "stylelint": "^14.8.4",
-    "stylelint-config-recommended-scss": "^6.0.0",
-    "stylelint-config-standard": "^25.0.0",
+    "stylelint-config-recommended-scss": "^7.0.0",
+    "stylelint-config-standard": "^26.0.0",
     "stylelint-scss": "^4.2.0",
     "svelte": "^3.48.0",
     "svelte-check": "^2.7.1",
     "svelte-preprocess": "^4.10.6",
     "vanilla-lazyload": "^17.8.2",
+    "vite": "^3.0.2",
     "vite-imagetools": "^4.0.3"
   },
   "type": "module",
-  "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/rodneylab/sveltekit-seo"
   },
   "bugs": {
     "url": "https://github.com/rodneylab/sveltekit-seo/issues"
+  },
+  "peerDependencies": {
+    "vite": "^3.0.2"
   }
 }
