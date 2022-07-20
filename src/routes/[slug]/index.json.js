@@ -1,16 +1,40 @@
-import path from 'path';
-import { BLOG_PATH, getPost, getPostsContent } from '$lib/utilities/blog';
-
-export async function get({ params }) {
+/** @type {import('./__types/index.json').RequestHandler} */
+export async function GET({ params }) {
   const { slug } = params;
-  const __dirname = path.resolve();
-  const location = path.join(__dirname, BLOG_PATH);
-  const articles = await getPostsContent(location);
-  const article = articles.find((element) => element.slug === slug);
-  const post = await getPost(article.content, true);
-  if (post) {
+
+  const { default: body, metadata } = await import(`../../content/blog/${slug}/index.md`);
+
+  const {
+    datePublished,
+    featuredImage,
+    featuredImageAlt,
+    ogImage,
+    ogSquareImage,
+    postTitle,
+    seoMetaDescription,
+    twitterImage,
+  } = metadata;
+
+  if (!body) {
     return {
-      body: JSON.stringify({ post: { ...post, slug } }),
+      status: 404,
     };
   }
+
+  return {
+    body: JSON.stringify({
+      post: {
+        datePublished,
+        featuredImage,
+        featuredImageAlt,
+        ogImage,
+        ogSquareImage,
+        postTitle,
+        seoMetaDescription,
+        twitterImage,
+        slug,
+        body,
+      },
+    }),
+  };
 }
