@@ -16,11 +16,11 @@ const config = {
     }),
   ],
   kit: {
-    adapter: adapter({precompress:true}),
+    adapter: adapter({ precompress: true }),
     files: {
       hooks: 'src/hooks',
     },
-    prerender: {default: true}
+    prerender: { default: true },
   },
 };
 

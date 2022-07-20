@@ -4,9 +4,9 @@ import { imagetools } from 'vite-imagetools';
 /** @type {import('vite').UserConfig} */
 const config = {
   define: {
-    'process.env.VITE_BUILD_TIME': JSON.stringify(new Date().toISOString())
+    'process.env.VITE_BUILD_TIME': JSON.stringify(new Date().toISOString()),
   },
-  plugins: [sveltekit(), imagetools()]
+  plugins: [sveltekit(), imagetools()],
 };
 
 export default config;
