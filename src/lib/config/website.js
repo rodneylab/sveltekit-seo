@@ -7,6 +7,8 @@ const website = {
   siteLanguage: 'en-GB',
   siteTitle: 'SvelteKit SEO Demo Site',
   siteShortTitle: 'SvelteKit SEO', // used as SchemaOrg siteTitleAlt
+  description:
+    'SvelteKit MDsvex Blog Starter - starter code by Rodney Lab to help you get going on your next blog site',
   siteUrl: import.meta.env.VITE_SITE_URL,
   contactEmail: import.meta.env.VITE_CONTACT_EMAIL,
   facebookAuthorPage: `https://www.facebook.com/${import.meta.env.VITE_FACEBOOK_AUTHOR_PAGE}`,

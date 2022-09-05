@@ -20,7 +20,6 @@ const config = {
     files: {
       hooks: 'src/hooks',
     },
-    prerender: { default: true },
   },
 };
 
