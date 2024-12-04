@@ -1,34 +1,33 @@
 <script>
 	import hash from 'object-hash';
-	export let article = false;
-	export let author;
 
-	/**
-	 * @type {{ name: string; slug: string }[]}
-	 */
-	export let breadcrumbs;
-	export let datePublished;
-	export let entity;
-	export let lastUpdated;
-	export let featuredImage;
-	export let metadescription;
-	export let siteLanguage;
-	export let siteTitle;
-	export let siteTitleAlt;
-	export let siteUrl;
-	export let title;
-	export let url;
-	export let facebookPage;
-	export let githubPage;
-	export let linkedinProfile;
-	export let telegramUsername;
-	export let tiktokUsername;
-	export let twitterUsername;
+	let {
+		article = false,
+		author,
+		breadcrumbs,
+		datePublished,
+		entity,
+		lastUpdated,
+		featuredImage,
+		metadescription,
+		siteLanguage,
+		siteTitle,
+		siteTitleAlt,
+		siteUrl,
+		title,
+		url,
+		facebookPage,
+		githubPage,
+		linkedinProfile,
+		telegramUsername,
+		tiktokUsername,
+		twitterUsername,
+		entityMeta = null,
+	} = $props();
 
 	/**
 	 * @type {{ url: string; faviconWidth: number; faviconHeight: number } | null}
 	 */
-	export let entityMeta = null;
 
 	const entityHash = hash({ author }, { algorithm: 'md5' });
 
@@ -58,7 +57,7 @@
 						`https://uk.linkedin.com/in/${linkedinProfile}`,
 						facebookPage,
 					],
-			  }
+				}
 			: null;
 
 	const schemaOrgWebsite = {
@@ -212,5 +211,6 @@
 </script>
 
 <svelte:head>
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 	{@html jsonLdScript}
 </svelte:head>
