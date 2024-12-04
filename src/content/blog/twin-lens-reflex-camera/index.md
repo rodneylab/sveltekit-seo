@@ -13,10 +13,6 @@ categories: ''
 tags: ''
 ---
 
-<script>
-  import ExternalLink from '$lib/components/ExternalLink.svelte';
-</script>
-
 ## What is a Twin Lens Reflex Camera?
 
 Traditionally, the most common type of camera was a Single Lens Reflex camera. Today, digital mirrorless cameras are becoming more prevalent. These cameras have an electronic viewfinder which lets you see exactly what will appear in the capture. Things weren't that easy with earlier film cameras. The image needs to be captured on light sensitive film, which must be kept in a light-sealed compartment until you press the shutter release. Since the lens is aligned for capturing your image on the film, you need another way to preview and line up your shot. Single Lens Reflex cameras have a viewfinder, normally at the top of the camera. A mirror inside the camera reflects the image into the viewfinder, deflecting from the film, while you line up your shot. When you fire the shutter, the camera automatically lifts the mirror out of the way before opening the shutter, so that the image can be captured.
@@ -25,7 +21,7 @@ TLR cameras do things differently. As the name suggests, there is a second lens.
 
 ## Why shoot a Twin Lens Reflex Camera?
 
-With parallax and calibration to worry about, why would you use a TLR camera. Well, one nice feature is that you can shoot from waist height and get quite a different perspective. Vivian Maier is a photographer who used a TLR camera extensively and often shot surreptitiously from wait height. Check out some <ExternalLink ariaLabel="See Vivian Maier work at Huxley-Parlour" href="https://huxleyparlour.com/artists/vivian-maier/">Vivian Maier work on Huxley Parlour gallery website</ExternalLink>. If you haven't heard of Vivian Maier before, the story of how her work was discovered is quite interesting, I recommend you read up &mdash; you will not be disappointed!
+With parallax and calibration to worry about, why would you use a TLR camera. Well, one nice feature is that you can shoot from waist height and get quite a different perspective. Vivian Maier is a photographer who used a TLR camera extensively and often shot surreptitiously from wait height. Check out some [Vivian Maier work on Huxley Parlour gallery website](https://huxleyparlour.com/artists/vivian-maier/). If you haven't heard of Vivian Maier before, the story of how her work was discovered is quite interesting, I recommend you read up &mdash; you will not be disappointed!
 
 ## Top TLR Cameras
 

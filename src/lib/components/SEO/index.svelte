@@ -26,38 +26,40 @@
 		twitterUsername,
 	} = website;
 
-	export let article = false;
-	export let breadcrumbs = [];
-	export let entityMeta = null;
-	export let lastUpdated;
-	export let datePublished;
-	export let metadescription;
-	export let slug;
-	export let timeToRead = 0;
-	export let title;
-
 	const defaultAlt =
 		'picture of a person with long, curly hair, wearing a red had taking a picture with an analogue camera';
 
-	export let featuredImage = {
-		url: featuredImageSrc,
-		alt: defaultAlt,
-		width: 672,
-		height: 448,
-		caption: 'Home page',
-	};
-	export let ogImage = {
-		url: ogImageSrc,
-		alt: defaultAlt,
-	};
-	export let ogSquareImage = {
-		url: ogSquareImageSrc,
-		alt: defaultAlt,
-	};
-	export let twitterImage = {
-		url: twitterImageSrc,
-		alt: defaultAlt,
-	};
+	let {
+		article = false,
+		breadcrumbs = [],
+		entityMeta = null,
+		lastUpdated,
+		datePublished,
+		metadescription,
+		slug,
+		timeToRead = 0,
+		title,
+		featuredImage = {
+			url: featuredImageSrc,
+			alt: defaultAlt,
+			width: 672,
+			height: 448,
+			caption: 'Home page',
+		},
+		ogImage = {
+			url: ogImageSrc,
+			alt: defaultAlt,
+		},
+		ogSquareImage = {
+			url: ogSquareImageSrc,
+			alt: defaultAlt,
+		},
+		twitterImage = {
+			url: twitterImageSrc,
+			alt: defaultAlt,
+		},
+	} = $props();
+
 	const url = `${siteUrl}/${slug}`;
 	const pageTitle = `${siteTitle} ${VERTICAL_LINE_ENTITY} ${title}`;
 	const openGraphProps = {

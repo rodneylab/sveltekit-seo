@@ -8,8 +8,8 @@
 	import SEO from '$lib/components/SEO/index.svelte';
 	import website from '$lib/config/website';
 
-	export let data;
-	const { posts } = data;
+	let { data } = $props();
+	let { posts } = $derived(data);
 
 	const { author, siteUrl } = website;
 	let title = 'Home';
@@ -81,6 +81,6 @@
 
 <style lang="scss">
 	header > h2 {
-		font-size: $font-size-3;
+		font-size: variables.$font-size-3;
 	}
 </style>

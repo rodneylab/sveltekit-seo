@@ -3,7 +3,7 @@
 	import { browser } from '$app/environment';
 	import { Image } from '@rodneylab/sveltekit-components';
 
-	export let imageData;
+	let { imageData } = $props();
 
 	onMount(() => {
 		if (browser) {

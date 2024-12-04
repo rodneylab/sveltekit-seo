@@ -1,10 +1,7 @@
 <script>
 	import Icon, { addCollection } from '@iconify/svelte/dist/OfflineIcon.svelte';
 
-	export let label = 'Tik tok icon';
-	export let colour = 'inherit';
-	export let ariaHidden = false;
-	export let width = 24;
+	let { colour = 'inherit', label = 'Tik Tok icon', ariaHidden = false, width = 24 } = $props();
 
 	addCollection({
 		prefix: 'simple-icons',
