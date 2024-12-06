@@ -20,7 +20,7 @@
 		},
 	];
 	let metadescription =
-		'SvelteKit MDsvex Blog Starter - starter code by Rodney Lab to help you get going on your next blog site';
+		'SvelteKit Markdown Blog Starter - starter code by Rodney Lab to help you get going on your next blog site';
 	const featuredImageAlt =
 		'picture of a person with long, curly hair, wearing a red had taking a picture with an analogue camera';
 	const featuredImage = {
@@ -67,7 +67,7 @@
 <SEO {...seoProps} />
 <header>
 	<h1>Climate &mdash; Sveltekit Starter</h1>
-	<h2>SvelteKit MDsveX (Markdown for Svelte) Blog</h2>
+	<h2>SvelteKit Markdown Blog</h2>
 </header>
 <Card>
 	<h2><span>About me</span></h2>
