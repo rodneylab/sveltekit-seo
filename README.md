@@ -25,7 +25,7 @@ See the [SvelteKit SEO blog post on the Rodney Lab site](https://rodneylab.com/s
 
 Please drop questions into a comment at the bottom of one of the post pages. Here's the quick start:
 
-## Creating your Own MDsveX Blog Site with SEO Components
+## Creating your Own Markdown Blog Site with SEO Components
 
 If you're seeing this, you've probably already done this step. Congrats!
 
