@@ -14,6 +14,7 @@
 # sveltekit-seo
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/sveltekit-seo)
+ [![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/rodneylab/sveltekit-seo)
 
 SvelteKit demo code for adding SEO support. The functionality is added principally by three components. Follow links to read more about using them:
 
